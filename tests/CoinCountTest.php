@@ -59,5 +59,18 @@
             $this->assertEquals("one nickel, one penny", $result);
         }
 
+        // function testSixCents() {
+        //
+        //     //Arrange
+        //     $test_CoinCount = new CoinCount;
+        //     $input = "6";
+        //
+        //     //Act
+        //     $result = $test_CoinCount->makeChange($input);
+        //
+        //     //Assert
+        //     $this->assertEquals("one nickel, one penny", $result);
+        // }
+
     }
  ?>

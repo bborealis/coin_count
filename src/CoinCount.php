@@ -4,7 +4,18 @@
 
 		function makeChange($input) {
 			$output = array();
-			$possibleChange = array("1"=>"one penny", "2" => "two pennies", "3" => "three pennies", "4" => "four pennies", "5" => "one nickel", "6" => "one nickel, one penny");
+
+			$possibleChange = array("1"=>"one penny", "2" => "two pennies", "3" => "three pennies", "4" => "four pennies", "5" => "one nickel", "6" => "one nickel, one penny", );
+
+			// $quarters = 0;
+			// $dimes = 0;
+			// $nickels = 0;
+			// $pennies = 0;
+			//
+			// while($input < 5 || $input > 0) {
+			// 	$pennies =+ 1;
+			// }
+			// $change = $pennies + "pennies";
 
 
 
