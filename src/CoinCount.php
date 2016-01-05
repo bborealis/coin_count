@@ -4,9 +4,11 @@
 
 		function makeChange($input) {
 			$output = array();
-			$possibleChange = array("1"=>"one penny");
+			$possibleChange = array("1"=>"one penny", "2" => "two pennies");
 
 			if ((int)$input - 1 == 0) {
+				array_push($output, $input);
+			} elseif ($input == 2) {
 				array_push($output, $input);
 			}
 
