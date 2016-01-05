@@ -17,5 +17,19 @@
             //Assert
             $this->assertEquals("one penny", $result);
         }
+
+        //2. Enter " .02" and return " 2 pennies".
+        function testTwoPenny() {
+
+            //Arrange
+            $test_CoinCount = new CoinCount;
+            $input = "2";
+
+            //Act
+            $result = $test_CoinCount->makeChange($input);
+
+            //Assert
+            $this->assertEquals("two pennies", $result);
+        }
     }
  ?>
