@@ -31,5 +31,33 @@
             //Assert
             $this->assertEquals("two pennies", $result);
         }
+
+        //3. Enter ".05" and return "1 nickel".
+        function testThreePenny() {
+
+            //Arrange
+            $test_CoinCount = new CoinCount;
+            $input = "5";
+
+            //Act
+            $result = $test_CoinCount->makeChange($input);
+
+            //Assert
+            $this->assertEquals("one nickel", $result);
+        }
+
+        function testSixCents() {
+
+            //Arrange
+            $test_CoinCount = new CoinCount;
+            $input = "6";
+
+            //Act
+            $result = $test_CoinCount->makeChange($input);
+
+            //Assert
+            $this->assertEquals("one nickel, one penny", $result);
+        }
+
     }
  ?>

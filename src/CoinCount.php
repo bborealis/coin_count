@@ -4,19 +4,29 @@
 
 		function makeChange($input) {
 			$output = array();
-			$possibleChange = array("1"=>"one penny", "2" => "two pennies");
+			$possibleChange = array("1"=>"one penny", "2" => "two pennies", "3" => "three pennies", "4" => "four pennies", "5" => "one nickel", "6" => "one nickel, one penny");
 
-			if ((int)$input - 1 == 0) {
-				array_push($output, $input);
-			} elseif ($input == 2) {
-				array_push($output, $input);
-			}
 
 
 			foreach($possibleChange as $key=>$value) {
-				if((in_array($key, $output)) !== false) {
-					$change =  $value;
+
+				if ($input == 1) {
+					array_push($output, $input);
+				} elseif ($input == 2) {
+					array_push($output, $input);
+				} elseif ($input == 3) {
+					array_push($output, $input);
+				} elseif ($input == 4) {
+					array_push($output, $input);
+				} elseif ($input == 5) {
+					array_push($output, $input);
+				} elseif ($input == 6) {
+					array_push($output, $input);
 				}
+
+				if((in_array($key, $output)) !== false) {
+						$change = $value;
+					}
 			}
 
 			return $change;
